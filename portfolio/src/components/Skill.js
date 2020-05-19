@@ -8,7 +8,7 @@ function Skill(props){
           className="rounded circle"
           alt={name}
           src={imageUrl}
-          style={{width:"75", height:"75"}}
+          style={{width:"25", height:"25"}}
           />
           
           </div>

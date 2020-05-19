@@ -6,18 +6,41 @@ import About from "./components/About";
 import Footer from "./components/Footer";
 import ProjectSection from "./components/ProjectSection";
 import SkillsSection from "./components/SkillsSection";
+import Contact from "./components/Contact";
+import NotFound from "./components/NotFound";
+import AddProject from "./components/AddProject";
+import {BrowserRouter, Route, Switch} from "react-router-dom";
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Navbar/>
-      <Title />
-      <About />
-      <SkillsSection />
+      <Switch>
+        <Route exact path="/">
+        <Title name="Annanya Vedala" leadtext="I am a Technology enthusiast"/>
+        <About />
+        <SkillsSection />
+        </Route>
+      <Route exact path="/contact">
+        <Contact/>
+      </Route>
+      <Route exact path="/ProjectSection">
       <ProjectSection />
-      <Footer />
+      </Route>
+      <Route exact path="/AddProject" component={AddProject}></Route>
+      <Route component={NotFound}/>
+      
 
-      </div>
+      
+        
+      </Switch>
+      
+      <Footer />
+      
+
+      
+    </BrowserRouter>
+    
   );
 }
 

@@ -1,16 +1,17 @@
 import React from "react";
 
+
 function ProjectCard(props){
-    const {id, title, excerpt, imageUrl, link}= props.project;
+    const {title, excerpt, imageUrl}= props.project;
     return(
-    <div classame="card-shadow h-100">
+    <div key="id" classame="card-shadow h-100">
       <img className="card-img-top" src={imageUrl} alt="twin" />
       <div className="card-body">
       <h4 className="card-title"> 
       {title}
       </h4>
       <p className="card-text">{excerpt}</p>
-      < a href={link} className="stretchedlink"></a>
+      < a href="/" className="stretchedlink"></a>
       </div>
     </div>
     );

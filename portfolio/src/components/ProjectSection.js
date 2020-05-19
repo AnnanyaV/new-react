@@ -8,7 +8,7 @@ function ProjectSection(){
             title: "Blog Article-1",
             excerpt: "Cloud gaming",
             imageUrl:require("../assets/cloud.png"),
-            link: "https://medium.com/@annanyaved.07/cloud-gaming-aa807f68de1c",
+            // link: "https://medium.com/@annanyaved.07/cloud-gaming-aa807f68de1c",
             
         },
         {
@@ -16,7 +16,7 @@ function ProjectSection(){
             title: "Blog Article-2",
             excerpt: "Twin Computing",
             imageUrl:require("../assets/twin.jpeg"),
-            link:"https://medium.com/@annanyaved.07/digital-twins-9f20a63b95b3",
+            // link:"https://medium.com/@annanyaved.07/digital-twins-9f20a63b95b3",
             
         },
     ];
